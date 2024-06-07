@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div class="inputbox">
+            <h3>celcius to fahrenheit converter</h3>
+            <div class="inputbox1">
+            <input type="text"id="input" placeholder="type Celcuius">
+            </div>
+            <div class="button">
+            <button type="submit"id="submit" onclick="convert()">Submit</button>
+        </div>
+        </div>
+        <div id="result">
+
+        </div>
+    </div>
+   
+    <script>
+      function convert(){
+       const a=Number(document.getElementById("input").value)
+       const b=((a*9)/5)+32;
+       const c=document.getElementById("result");
+         c.innerHTML=b+" F"
+              }
+   </script>
+</body>
+</html>
